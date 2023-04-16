@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vinod Dhole</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+    <!-- Template Main CSS File -->
+    <link href="static/css/style.css" rel="stylesheet">
+
+<body>
+<!-- ChatBot start-->
+<div class="container back-to-top d-flex align-items-center justify-content-center">
+    <div class="chatbox ">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">VBot</h4>
+                    <p class="chatbox__description--header">Hi. My name is VBot How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+          <button><img src="static/img/chatbox-icon.svg"/></button>
+        </div>
+    </div>
+</div>
+<!-- ChatBot End--> 
+<script>
+    $SCRIPT_ROOT = {{ request.script_root|tojson }};
+  </script>
+  <script type="text/javascript" src="static/js/app.js"></script>
+  
+</body>
+
+</html>    
