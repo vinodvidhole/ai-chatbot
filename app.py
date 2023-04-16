@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request, redirect, jsonify
 
-from chatterbot import ChatBot
-from chatterbot.trainers import ChatterBotCorpusTrainer
+#from chatterbot import ChatBot
+#from chatterbot.trainers import ChatterBotCorpusTrainer
 
 
-chatbot = ChatBot('VBot')
-trainer = ChatterBotCorpusTrainer(chatbot)
-trainer.train("chatterbot.corpus.english")
+#chatbot = ChatBot('VBot')
+#trainer = ChatterBotCorpusTrainer(chatbot)
+#trainer.train("chatterbot.corpus.english")
 
 app = Flask(__name__)
 
@@ -17,7 +17,8 @@ def index():
 @app.route('/chat', methods=['POST'])
 def chat():
     ip_data = request.get_json().get("message")
-    reply = str(chatbot.get_response(ip_data))
+    #reply = str(chatbot.get_response(ip_data))
+    reply = "how are you"
     message = {"answer":reply}
     return jsonify(message)
   
