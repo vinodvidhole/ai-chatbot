@@ -3,4 +3,5 @@ gunicorn
 requests
 spacy
 chatterbot
-chatterbot_corpus
+chatterbot-corpus
+pip==23.0.1
