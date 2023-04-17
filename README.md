@@ -1,2 +1,2 @@
 # ai-chatbot
-AI Chatbot Plugin for your Portfolio Website 
+url = "https://api.writesonic.com/v2/business/content/chatsonic?engine=premium"
