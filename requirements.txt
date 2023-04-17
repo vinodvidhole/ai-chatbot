@@ -3,3 +3,4 @@ gunicorn
 requests
 spacy
 chatterbot
+chatterbot_corpus
