@@ -41,7 +41,7 @@ def chat():
     if response.ok:
       reply = json.loads(response.text)['message']
     else:
-      reply = 'Something went wrong...'
+      reply = 'You’ve reached your usage limit.'
 
     print(reply)  
     message = {"answer":reply}
